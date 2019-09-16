@@ -34,7 +34,7 @@ pipeline {
     }
     stage('start container') {
       steps{
-       sh ''' docker run -p 8080:8080 ee-test:"$BUILD_NUMBER"'''
+       sh ''' docker run -p 8080:8080 gd015p/equalexperts:"$BUILD_NUMBER"'''
 	     }
     }
   }
